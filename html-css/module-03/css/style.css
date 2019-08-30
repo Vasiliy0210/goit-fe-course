@@ -1,0 +1,166 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px grey solid; */
+}
+
+
+body {
+    font-family: 'Playfair Display', Arial, sans-serif;
+    color: #626262;
+    font-size: 0px;
+    /* line-height: 24px; */
+    }
+
+.page-navigation {
+    margin: 0 auto;
+    width: 900px;
+
+}
+
+.site-navigation {
+    display: inline-block;
+    width: 900px;
+    height: auto;
+    list-style: none;
+    /* margin: auto; */
+    padding-top: 72px;
+    padding-bottom: 97px;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.site-navigation li:nth-child(1) {
+    margin-right: 120px;
+}
+
+.site-navigation li:nth-child(2) {
+    margin-right: 105px;
+}
+
+.site-navigation li:nth-child(3) {
+    margin-right: 95px;
+}
+
+.site-navigation li:last-child {
+    margin: 0px;
+}
+
+.site-navigation li {
+    display: inline-block;
+}
+
+.site-navigation a {
+    color: #626262;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 24px;
+}
+
+.site-navigation a:hover {
+    color: #03a9f4;
+}
+
+.articles {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.articles-list {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.articles-list li {
+    /* list-style: none; */
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.articles-list li:nth-child(2n+1) {
+    margin-right: 60px;
+    
+}
+
+.articles-list li:nth-child(5)>.articles-filling {
+    padding-bottom: 0px;
+}
+
+.articles-list li:nth-child(6)>.articles-filling {
+    padding-bottom: 0px;
+}
+
+.articles-list-item {
+    width: 420px;
+    height: auto;
+    display: inline-block;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+.articles-list-item h2 {
+    font-size: 30px;
+    line-height: 36px;
+    }
+.articles-direction {
+    text-transform: uppercase;
+    color: #b4ad9e;
+    line-height: 17px;
+    font-family: 'Ubuntu', Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    }
+
+    .articles-filling {
+        font-size: 14px;
+        line-height: 24px;
+        margin: 0px;
+        padding-top: 30px;
+        padding-bottom: 127px;
+    }
+
+    .articles-filling :nth-child(5n) {
+        padding-bottom: 70px;
+
+    }
+
+    .articles-filling :nth-child(6n) {
+        padding-bottom: 70px;
+
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    button {
+        font-size: 20px;
+        color: #ababab;
+        line-height: 24px;
+        display: block;
+        padding: 15px 33px;
+        background-color: white;
+        margin-bottom: 70px;
+        border: 1px solid #535353;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 45px;
+        
+    }
+
+    
