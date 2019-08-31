@@ -25,7 +25,7 @@ body {
 }
 
 .site-navigation {
-    display: inline-block;
+    /* display: inline-block; */
     width: 900px;
     height: auto;
     list-style: none;
@@ -124,7 +124,7 @@ body {
 .articles-list-title {
     font-size: 30px;
     line-height: 36px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
     }
 
 .articles-filling {
