@@ -89,13 +89,9 @@ body {
     
 }
 
-.articles-list-item:nth-child(5) {
+.articles-list-item:nth-last-child(-n + 2){
     margin-bottom: 55px;
-}
-
-.articles-list-item:nth-child(6) {
-    margin-bottom: 55px;
-}
+    }
 
 .articles-list-item {
     width: 420px;
