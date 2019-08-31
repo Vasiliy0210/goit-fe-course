@@ -57,6 +57,7 @@ body {
 }
 
 .site-navigation a {
+    display: block;
     color: #626262;
     font-size: 14px;
     font-weight: 700;
