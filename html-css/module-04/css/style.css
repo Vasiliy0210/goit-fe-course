@@ -141,10 +141,12 @@ h2 {
 
 .featured-wrapper:hover .featured-item-title {
     background-color: #1abc9c;
+    cursor: pointer;
 }
 
 .featured-wrapper:hover .featured-item-price {
     background-color: #7fd9c7;
+    cursor: pointer;
 }
 
 .featured-item-title,
