@@ -20,7 +20,7 @@ h3,
     width: 1110px;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 105px;
+    padding-bottom: 105px;
 }
 
 .site-logo {
@@ -32,13 +32,8 @@ h3,
 }
 
 .site-navigation {
-    /* width: 465px; */
-    height: auto;
-    list-style: none;
-}
-
-.site-navigation {
     float: right;
+    height: auto;
     list-style: none;
     padding-top: 43px;
 }
@@ -55,6 +50,7 @@ h3,
 }
 
 .navigation-items a {
+    display: block;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
@@ -89,6 +85,7 @@ h3,
     width: 1110px;
     height: auto;
     margin: 0 auto;
+    padding-bottom: 112px;
 }
 
 .featured-list {
@@ -128,23 +125,22 @@ h2 {
     width: 255px;
     height: 322px;
     margin-right: 30px;
-    margin-bottom: 30px;
 }
 
 .featured-list li:nth-child(4n) {
     margin-right: 0px;
 }
 
-.featured-list li:nth-last-child(-n+4) {
-    margin-bottom: 108px;
+.featured-list li:not(:nth-last-child(-n+4)) {
+    margin-bottom: 30px;
 }
 
-.featured-wrapper:hover .featured-item-title {
+.featured-item:hover .featured-item-title {
     background-color: #1abc9c;
     cursor: pointer;
 }
 
-.featured-wrapper:hover .featured-item-price {
+.featured-item:hover .featured-item-price {
     background-color: #7fd9c7;
     cursor: pointer;
 }
@@ -248,8 +244,12 @@ h2 {
 .news-button {
     width: 160px;
     height: 51px;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 12px;
     background-color: #4ec6ab;
-    border: 0px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     font-size: 16px;
