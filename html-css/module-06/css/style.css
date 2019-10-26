@@ -55,9 +55,13 @@
     position: absolute;
     opacity: 0;
     margin-top: 10px;
+    transition-property: opacity;
+    transition-duration: 0.3s;
 }
 
 .menu-item:hover .menu-link::after {
+    transition-property: opacity;
+    transition-duration: 0.3s;
     opacity: 1;
 }
 
@@ -235,6 +239,8 @@ h3 {
 }
 
 .team-picture-wrapper:hover .wrap-gradient {
+    transition-property: left, top;
+    transition-duration: 0.3s;
     left: -10px;
     top: -10px;
 
@@ -247,6 +253,8 @@ h3 {
     background-color: #95e1d3;
     z-index: 1;
     position: relative;
+    transition-property: left, top;
+    transition-duration: 0.3s;
     }
 
 .select-list-wrapper {
@@ -258,9 +266,13 @@ h3 {
     height: 470px;
     background-image: linear-gradient(rgb(243,129,129,0.9) 0%, rgb(252,227,138, 0.9) 100%);
     opacity: 0;
+    transition-property: left, top;
+    transition-duration: 0.3s;
 }
 
 .select-list-wrapper:hover {
+    transition-property: left, top;
+    transition-duration: 0.3s;
     opacity: 1;
     left: -10px;
     top: -10px;
@@ -305,9 +317,13 @@ h3 {
     width: 56px;
     height: 56px;
     background-color: #fce38a;
+    transition-property: background-color;
+    transition-duration: 0.3s;
 }
 
 .select-item a:hover {
+    transition-property: background-color;
+    transition-duration: 0.3s;
     background-color: #95e1d3;
 }
 
