@@ -52,7 +52,6 @@
 }
 
 .page-header {
-    display: block;
     margin: 0 auto;
 }
 
@@ -80,12 +79,15 @@
     border: 2px solid transparent;
     border-radius: 20px;
     text-decoration: none;
+    transition-property: border;
+    transition-duration: 0.3s;
 }
 
 .menu-list a:focus, 
 .menu-list a:hover {
+    transition-property: border;
+    transition-duration: 0.3s;
     border: 2px solid #fff;
-    border-radius: 20px;
 }
 
 .menu-list li {
@@ -117,7 +119,7 @@
     text-transform: uppercase;
     line-height: 36px;
     text-align: center;
-    margin-top: 35px;
+    padding-top: 35px;
     color: #fff;
 }
 
@@ -128,7 +130,10 @@
     font-weight: 300;
     text-align: center;
     color: #fff;
-    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .header-title-button {
@@ -144,17 +149,18 @@
     text-align: center;
     width: 280px;
     height: 40px;
-    margin-top: 18px;
     cursor: pointer;
 }
 
 .partners {
-    margin-bottom: 56px;
+    padding-bottom: 56px;
+    width: 270px;
 }
 
 .partners-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -168,10 +174,11 @@
     font-size: 21.98px;
     text-align: center;
     margin: 0 auto;
-    margin-top: 68px;
+    padding-top: 68px;
     margin-bottom: 18px;
     color: #333333;
     font-weight: 700;
+    width: 270px;
 }
 
 .partners-item-img {
@@ -222,7 +229,7 @@
     font-weight: 700; 
     color: #333333;
     line-height: 17px;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .partners-item-description {
@@ -232,7 +239,9 @@
     font-weight: 300;
     text-align: center;
     color: #666666;
-    margin-top: 17px;
+    padding-top: 17px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .partners-button {
@@ -249,6 +258,15 @@
     text-align: center;
     margin: 0 auto;
     cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+}
+
+.partners-button:hover {
+    transition-property: background-color, color;
+    transition-duration: 0.3s;
+    background-color: #ff4e50;
+    color: #fff;
 }
 
 
@@ -264,7 +282,7 @@
     }
 
     .header-title {
-        width: 320px;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -283,21 +301,11 @@
         justify-content: center;
     }
 
-    .partners-title-wrapper {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        width: 270px;
-        margin: 0 auto;
-    }
-
     .partners-item {
-        padding-right: 50px;
-        padding-left: 50px;
-        max-width: 100%;
+        width: 270px;
     }
 }
-@media (min-width:768px) and (max-width:1199px) {
+@media (min-width:768px) and (max-width:959px) {
     .partners-list .partners-item:not(:nth-last-child(-n+2)) {
         margin-bottom: 60px;
     }
@@ -314,6 +322,9 @@
         background-image: url(../img/tablet-header-bg.png);
     }
     .page-nav {
+        width: 748px;
+        padding-right: 40px;
+        padding-left: 40px;
         display: flex;
         margin: 0 auto;
         padding-top: 38px;
@@ -337,17 +348,18 @@
     .header-title h1 {
         font-size: 51.97px;
         line-height: 61px;
-        margin-top: 144px;
+        padding-top: 144px;
+        /* padding-bottom: 37px; */
     }
 
     .header-title p {
-        margin-top: 37px;
+        padding-top: 30px;
         font-size: 23.99px;
         line-height: 29px;
+        padding-bottom: 33px;
     }
 
     .header-title-button {
-        margin-top: 33px;
         width: 225px;
     }
 
@@ -357,7 +369,7 @@
 
     .partners {
         width: 492px;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
     }
 
     .partners-title {
@@ -389,7 +401,7 @@
 
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 960px) {
 
     .header-wrapper {
         height: 700px;
@@ -403,7 +415,17 @@
 
     .partners {
         width: 940px;
-        margin-bottom: 72px;
+        padding-bottom: 72px;
+        margin: 0 auto;
+    }
+
+    .partners-list {
+        margin: 0 auto;
+        padding-bottom: 38px;
+    }
+
+    .partners-item {
+        width: 220px;
     }
 
 }
