@@ -51,18 +51,10 @@
     background-position: center;
 }
 
-.page-header {
-    margin: 0 auto;
-}
-
-.page-nav {
-    padding-top: 20px;
-    margin: 0 auto;
-}
-
 .menu-list {
     display: flex;
     text-align: center;
+    padding-top: 20px;
 }
 
 .menu-list a {
@@ -102,7 +94,7 @@
     font-size: 20px;
     line-height: 24px;
     text-decoration: none;
-    padding-top: 104px;
+    padding-top: 112px;
     text-transform: uppercase;
 }
 
@@ -166,7 +158,6 @@
 
 .partners-item {
     text-align: center;
-    margin: 0 auto;
 }
 
 .partners-title {
@@ -226,7 +217,7 @@
 .partners-item-name {
     font-size: 13.97px;
     font-family: Montserrat, sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
     color: #333333;
     line-height: 17px;
     padding-top: 20px;
@@ -288,6 +279,7 @@
 
     .partners-item {
         margin-bottom: 28px;
+        margin: 0 auto;
     }
 }
 
@@ -303,15 +295,16 @@
 
     .partners-item {
         width: 270px;
+        padding-bottom: 28px;
     }
 }
 @media (min-width:768px) and (max-width:959px) {
-    .partners-list .partners-item:not(:nth-last-child(-n+2)) {
-        margin-bottom: 60px;
+    .row .partners-item:not(:nth-last-child(-n+2)) {
+        margin-bottom: 55px;
     }
     
-    .partners-list .partners-item:nth-last-child(-n+2) {
-        margin-bottom: 0;
+    .row .partners-item:nth-last-child(-n+2) {
+        padding-bottom: 37px;
     }
 }
 
@@ -321,20 +314,15 @@
         height: 700px;
         background-image: url(../img/tablet-header-bg.png);
     }
-    .page-nav {
-        width: 748px;
-        padding-right: 40px;
-        padding-left: 40px;
-        display: flex;
-        margin: 0 auto;
+    
+    .menu-list {
         padding-top: 38px;
-        align-items: center;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+        padding-right: 40px;
     }
 
     .site-logo {
-        padding-top: 0;
+        padding-top: 46px;
+        padding-left: 40px;
     
     }
 
@@ -383,21 +371,11 @@
         margin: 0 auto;
     }
 
-    .partners-list {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 38px;
-        width: 100%;
-        margin-right: -10px;
-        margin-left: -10px;
-    }
-
     .partners-item {
-        padding-right: 10px;
-        padding-left: 10px;
+        max-width: 236px;
+        /* padding-right: 10px;
+        padding-left: 10px; */
     }
-    
 
 }
 
@@ -408,24 +386,18 @@
         background-image: url(../img/dekstop-header-bg.png);
     }
 
-    .page-nav {
-        width: 940px;
-        margin: 0 auto;
-    }
-
     .partners {
         width: 940px;
         padding-bottom: 72px;
         margin: 0 auto;
     }
 
-    .partners-list {
-        margin: 0 auto;
-        padding-bottom: 38px;
+    .partners-item {
+        max-width: 220px;
     }
 
-    .partners-item {
-        width: 220px;
+    .row .partners-item:nth-last-child(-n+4) {
+        padding-bottom: 38px;
     }
 
 }
