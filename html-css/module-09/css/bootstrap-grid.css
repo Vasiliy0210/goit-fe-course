@@ -16,8 +16,7 @@ html {
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 300px;
   /* max-width: 320px; */
   /* padding-right: 15px;
@@ -62,8 +61,10 @@ html {
 .row {
   display: -ms-flexbox;
   display: flex;
+  justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 100%;
   /* margin-right: -15px;
   margin-left: -15px; */
 }
